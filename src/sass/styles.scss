@@ -1,0 +1,71 @@
+$color: #404040;
+$font: 14px “Segoe UI”;
+
+body {
+  font: $font;
+  color: $color;
+}
+
+.container {
+  width: 400px;
+  margin: 100px auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  font: $font;
+  color: $color;
+  width: 100%;
+  border: 1px solid #E2E8EE;
+  border-radius: 5px;
+  height: 40px;
+  outline: none;
+  padding-left: 1em;
+}
+
+#autocomplete-results {
+  opacity: 0;
+  color: #8B8D90;
+  background: #FFFFFF;
+  border: 1px solid #E2E8EE;
+  font: $font;
+  margin: 10px 0 0 0;
+  padding: 0;
+}
+
+#autocomplete-results li {
+  list-style: none;
+  padding: 1em;
+}
+
+#autocomplete-results li.highlighted {
+  background-color: #E2E8EE;
+  color: #5E6063;
+}
+
+#autocomplete-results.visible {
+  opacity: 1;
+}
+
+.error {
+  border: 2px solid red !important;
+}
+
+.errorText {
+  color: red;
+}
+
+#message {
+  list-style-type: none;
+  margin: 5px 5px;
+  padding: 0;
+}
+
+.placeholderCl::-webkit-input-placeholder {
+  opacity: 0.4;
+}

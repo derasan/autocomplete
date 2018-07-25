@@ -55,31 +55,6 @@ const config = {
         'sass-loader',
         'resolve-url-loader'
       ]
-    }, {
-      test: /\.(gif|png|jpe?g|svg)$/i,
-      use: [{
-        loader: 'file-loader',
-        options: {
-          name: 'images/[name][hash].[ext]'
-        }
-      }, {
-        loader: 'image-webpack-loader',
-        options: {
-          mozjpeg: {
-            progressive: true,
-            quality: 70
-          }
-        }
-      }
-      ]
-    }, {
-      test: /\.(eot|svg|ttf|woff|woff2)$/,
-      use: {
-        loader: 'file-loader',
-        options: {
-          name: 'fonts/[name][hash].[ext]'
-        }
-      }
     }
     ]
   },
